@@ -40,3 +40,82 @@ The work was completed as part of Achievement 6 using Python for data analysis a
 ---
 
 ## Project Structure
+
+```
+achievement-6-happiness-analysis/
+├── Data/
+│   └── 2019.csv
+├── Notebooks/
+│   ├── Exploratory_Analysis.ipynb
+│   └── Modeling_Methods_Overview.ipynb
+├── Tableau/
+│   └── tableau_link.txt
+└── README.md
+```
+
+---
+
+## Notebooks Overview
+
+### Exploratory_Analysis.ipynb
+- Data inspection and validation
+- Selection of relevant numeric variables
+- Pearson correlation matrix and heatmap
+- Scatter plots with regression trends
+- Pair plot of well-being indicators
+- Categorical analysis (low / medium / high happiness groups)
+- Exploratory insights motivating modeling choices
+
+### Modeling_Methods_Overview.ipynb
+- Overview of modeling approaches applied after exploration
+- Univariate linear regression (cross-sectional happiness data)
+- K-Means clustering at k = 3 (multivariate country profiles)
+- Time-series analysis using U.S. unemployment data (trend visualization, ADF stationarity testing, autocorrelation diagnostics)
+- Consolidated discussion of insights, limitations, and next steps
+
+*Note: The time-series analysis is included as a methodological demonstration and is not directly integrated with the cross-sectional happiness dataset.*
+
+---
+
+## Tools & Libraries
+
+Python · Pandas · NumPy · SciPy · Matplotlib · Seaborn · scikit-learn · statsmodels · pandas_datareader · Tableau
+
+---
+
+## Tableau Visualization
+
+Key findings from the happiness analysis are presented in an interactive Tableau story, including:
+
+- Global distribution of happiness scores (choropleth)
+- Relationships between happiness, GDP per capita, and social support
+- Summary insights, limitations, and next steps
+
+**Tableau Public link:**
+[Achievement 6 — Happiness & Economic Factors](https://public.tableau.com/views/Achievement6HappinessEconomicFactors/Achievement6HappinessEconomicFactors)
+
+---
+
+## Limitations
+
+- Happiness data represents a single year and does not capture changes over time
+- Observed associations do not imply causation
+- Linear regressions in this project are univariate; relative contributions of correlated predictors cannot be separated without a multivariate model
+- Clustering results depend on subjective modeling choices (choice of k, feature selection, scaling)
+- Time-series results are illustrative and not comparable to cross-sectional happiness outcomes
+
+---
+
+## Next Steps
+
+- Extend regression analysis to include multiple predictors simultaneously
+- Validate clustering results using alternative clustering methods (hierarchical, DBSCAN)
+- Incorporate longitudinal happiness data to enable true time-series modeling
+- Explore forecasting models (e.g., ARIMA) in greater depth for time-series datasets
+
+---
+
+## Author
+
+**Ageel Alramadhan** — Data Analyst, Hamburg
+[Portfolio](https://ageelalramadhan.github.io) · [LinkedIn](https://www.linkedin.com/in/ageel-alramadhan/) · [GitHub](https://github.com/ageelalramadhan)
